@@ -1,0 +1,4 @@
+Train: nohup /opt/miniforge3/bin/python main.py > train.log 2>&1 &
+Inference: nohup /opt/miniforge3/bin/python inf.py > inf.log 2>&1 &
+
+Check: ps aux | grep <main or inf>
